@@ -101,6 +101,10 @@ section.main-section:last-child {
   line-height: 5.6rem;
   position: relative;
 }
+.navigation .navigation-title img {
+  padding-top: 8px;
+  height: 45px;
+}
 
 /**
  * Hero
@@ -108,7 +112,7 @@ section.main-section:last-child {
 .hero {
   margin: 0;
   padding: 0;
-  background: url(../img/Will-Rogers-Street-Elevation-8X5-150dpi.jpg) no-repeat center center fixed;
+  background: url(../img/Will-Rogers-Street-Elevation-8X5-150dpi.jpg) no-repeat center bottom fixed;
   background-size: cover;
   height: 500px;
   position: relative;

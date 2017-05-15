@@ -46,6 +46,17 @@ section.main-section a.button {
   line-height: 4.8rem;
   font-size: 1.4em;
 }
+section.main-section:last-child {
+  border: 0;
+}
+
+/**
+ * Buttons
+ */
+.button {
+  font-family: 'Poiret One', Limelight, "Century Gothic", AppleGothic, sans-serif;
+  font-size: 100%;
+}
 
 /**
  * Navigation menu

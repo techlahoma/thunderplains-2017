@@ -14,6 +14,13 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+h1.title {
+  padding: 40px 0;
+  background-color: #3E295F;
+  border-bottom: 4px solid #524866;
+  color: #efefef;
+}
+
 /**
  * Helpers
  */
@@ -51,6 +58,30 @@ section.main-section:last-child {
 }
 
 /**
+ * Sponsorship Packages
+ */
+article.sponsorship-package {
+  margin-bottom: 80px;
+}
+article.sponsorship-package h3 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+article.sponsorship-package h4 {
+  margin-top: 0;
+}
+article.sponsorship-package ul {
+  font-size: 1.1em;
+}
+article.sponsorship-package .price {
+  display: block;
+  float: right;
+}
+article.sponsorship-package li.highlight {
+  font-weight: bold;
+}
+
+/**
  * Buttons
  */
 .button {
@@ -83,6 +114,15 @@ section.main-section:last-child {
 .navigation .navigation-link {
   display: inline;
   padding-left: 30px;
+}
+.navigation a.button {
+  display: inline-block;
+  margin-left: 30px;
+}
+.navigation .text-right {
+  display: inline-block;
+  text-align: right;
+  margin-left: 30px;
 }
 
 .navigation .navigation-link, .navigation .navigation-title, .navigation .title {
@@ -149,6 +189,21 @@ section.main-section:last-child {
   background-color: rgba(60, 15, 104, 0.5);
   line-height: 1.5em;
   text-align: center;
+}
+
+/**
+ * Flexbox alignment
+ */
+.flex {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.flex-left {
+  justify-content: flex-start;
+}
+.flex-right {
+  justify-content: flex-end;
 }
 
 /**

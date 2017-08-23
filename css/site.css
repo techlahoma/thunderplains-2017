@@ -14,6 +14,10 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+h4, h5, h6 {
+  font-weight: bold;
+}
+
 h1.title {
   padding: 40px 0;
   background-color: #3E295F;
@@ -224,4 +228,37 @@ article.sponsorship-package li.highlight {
 }
 .footer .past-years p {
   margin-bottom: 0;
+}
+
+/**
+ * Schedule
+ */
+.schedule {
+
+}
+.schedule h3 {
+  border-bottom: 1px solid #333;
+}
+.schedule .timeslot {
+  background: rgba(60, 15, 104, 0.7);
+      /* rgba(155, 77, 202, 0.7) */
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 16px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.schedule .break-info {
+  text-align: center;
+}
+.column .room {
+  background-color: #ddd;
+  font-size: 1.1em;
+  padding: 10px 16px;
+  margin-bottom: 1em;
+}
+.column .room.room-large {
+  background-color: rgba(155, 77, 202, 0.35);
 }

@@ -9,22 +9,18 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
-  font-family: Limelight, 'Century Gothic', AppleGothic, sans-serif;
+h1, h2, h3 {
+  font-family: Limelight, "Century Gothic", AppleGothic, sans-serif;
   font-weight: bold;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
   font-weight: bold;
 }
 
 h1.title {
   padding: 40px 0;
-  background-color: #3e295f;
+  background-color: #3E295F;
   border-bottom: 4px solid #524866;
   color: #efefef;
 }
@@ -42,7 +38,14 @@ h1.title {
 .hero {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, rgba(60, 15, 104, 0.7), rgba(155, 77, 202, 0.7)),
+  background:
+    /* top, transparent with gradient */
+    linear-gradient(
+      45deg,
+      rgba(60, 15, 104, 0.7),
+      rgba(155, 77, 202, 0.7)
+    ),
+    /* bottom, image */
     url(../img/Will-Rogers-Street-Elevation-8X5-150dpi.jpg);
   background-attachment: fixed;
   background-position: center bottom;
@@ -63,7 +66,8 @@ h1.title {
   text-align: center;
 }
 .hero .intro h1,
-.hero .intro h2 {
+.hero .intro h2
+{
   display: inline-block;
   width: auto;
   padding: 0px 20px;
@@ -89,6 +93,7 @@ h1.title {
     font-size: 2rem;
   }
 }
+
 /**
  * Main website sections
  */
@@ -100,7 +105,7 @@ section.main-section h2 {
   display: inline-block;
   margin: 0 auto;
   margin-bottom: 1.5em;
-  font-family: 'Poiret One', 'Century Gothic', AppleGothic, sans-serif;
+  font-family: 'Poiret One', "Century Gothic", AppleGothic, sans-serif;
   text-align: center;
   border-bottom: 1px solid #333;
 }
@@ -108,7 +113,7 @@ section.main-section p {
   font-size: 1.4em;
 }
 section.main-section a.button {
-  font-family: 'Poiret One', Limelight, 'Century Gothic', AppleGothic, sans-serif;
+  font-family: 'Poiret One', Limelight, "Century Gothic", AppleGothic, sans-serif;
   font-weight: bold;
   height: 4.8rem;
   line-height: 4.8rem;
@@ -146,7 +151,7 @@ article.sponsorship-package li.highlight {
  * Buttons
  */
 .button {
-  font-family: 'Poiret One', Limelight, 'Century Gothic', AppleGothic, sans-serif;
+  font-family: 'Poiret One', Limelight, "Century Gothic", AppleGothic, sans-serif;
   font-size: 100%;
 }
 
@@ -155,7 +160,7 @@ article.sponsorship-package li.highlight {
  */
 .navigation {
   background: #333;
-  border-bottom: 0.1rem solid #937042;
+  border-bottom: .1rem solid #937042;
   display: block;
   height: 5.2rem;
   left: 0;
@@ -175,11 +180,10 @@ article.sponsorship-package li.highlight {
 .navigation .navigation-link {
   display: inline;
   padding-left: 15px;
-  flex: 1;
 }
 .navigation a.button {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .navigation .text-right {
   display: inline-block;
@@ -187,9 +191,7 @@ article.sponsorship-package li.highlight {
   margin-left: 30px;
 }
 
-.navigation .navigation-link,
-.navigation .navigation-title,
-.navigation .title {
+.navigation .navigation-link, .navigation .navigation-title, .navigation .title {
   color: #bf9865;
   display: inline-block;
   font-size: 1.6rem;
@@ -197,11 +199,10 @@ article.sponsorship-package li.highlight {
   text-decoration: none;
 }
 
-.navigation .navigation-title,
-.navigation .title {
+.navigation .navigation-title, .navigation .title {
   color: #bf9865;
-  font-family: Limelight, 'Century Gothic', AppleGothic, sans-serif;
-  font-size: 2.6rem;
+  font-family: Limelight, "Century Gothic", AppleGothic, sans-serif;
+  font-size: 2.60rem;
   letter-spacing: 2px;
   line-height: 5.6rem;
   position: relative;
@@ -214,7 +215,7 @@ article.sponsorship-package li.highlight {
 /**
  * Flexbox alignment
  */
-.flex {
+ .flex {
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -251,13 +252,14 @@ article.sponsorship-package li.highlight {
  * Schedule
  */
 .schedule {
+
 }
 .schedule h3 {
   border-bottom: 1px solid #333;
 }
 .schedule .timeslot {
   background: rgba(60, 15, 104, 0.7);
-  /* rgba(155, 77, 202, 0.7) */
+      /* rgba(155, 77, 202, 0.7) */
   color: #fff;
   font-size: 1.2em;
   font-weight: bold;

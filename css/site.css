@@ -9,16 +9,12 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   font-family: Limelight, "Century Gothic", AppleGothic, sans-serif;
   font-weight: bold;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
   font-weight: bold;
 }
 
@@ -29,32 +25,30 @@ h1.title {
   color: #efefef;
 }
 
+
 /**
  * Helpers
  */
+
 .small {
   font-size: 86%;
 }
 
+
 /**
  * Hero
  */
+
 .hero {
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-      45deg,
-      rgba(60, 15, 104, 0.7),
-      rgba(155, 77, 202, 0.7)
-    ),
-    url(../img/Will-Rogers-Street-Elevation-8X5-150dpi.jpg);
+  background: linear-gradient( 45deg, rgba(60, 15, 104, 0.7), rgba(155, 77, 202, 0.7)), url(../img/Will-Rogers-Street-Elevation-8X5-150dpi.jpg);
   background-attachment: fixed;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,10 +56,10 @@ h1.title {
 
 .hero .intro {
   margin: 0 auto;
-
   flex: none;
   text-align: center;
 }
+
 .hero .intro h1,
 .hero .intro h2 {
   display: inline-block;
@@ -77,6 +71,7 @@ h1.title {
   line-height: 1.5em;
   text-align: center;
 }
+
 @media only screen and (max-width: 900px) {
   .hero .intro h1,
   .hero .intro h2 {
@@ -95,13 +90,16 @@ h1.title {
   }
 }
 
+
 /**
  * Main website sections
  */
+
 section.main-section {
   padding: 7em 4em;
   border-bottom: 1px solid #ddd;
 }
+
 section.main-section h2 {
   display: inline-block;
   margin: 0 auto;
@@ -110,51 +108,61 @@ section.main-section h2 {
   text-align: center;
   border-bottom: 1px solid #333;
 }
+
 section.main-section p {
   font-size: 1.4em;
 }
+
 section.main-section a.button {
-  font-family: "Poiret One", Limelight, "Century Gothic", AppleGothic,
-    sans-serif;
+  font-family: "Poiret One", Limelight, "Century Gothic", AppleGothic, sans-serif;
   font-weight: bold;
   height: 4.8rem;
   line-height: 4.8rem;
   font-size: 1.4em;
 }
+
 section.main-section:last-child {
   border: 0;
 }
 
+
 /**
  * Sponsorship Packages
  */
+
 article.sponsorship-package {
   margin-bottom: 80px;
 }
+
 article.sponsorship-package h3 {
   font-size: 2em;
   margin-bottom: 0;
 }
+
 article.sponsorship-package h4 {
   margin-top: 0;
 }
+
 article.sponsorship-package ul {
   font-size: 1.1em;
 }
+
 article.sponsorship-package .price {
   display: block;
   float: right;
 }
+
 article.sponsorship-package li.highlight {
   font-weight: bold;
 }
 
+
 /**
  * Buttons
  */
+
 .button {
-  font-family: "Poiret One", Limelight, "Century Gothic", AppleGothic,
-    sans-serif;
+  font-family: "Poiret One", Limelight, "Century Gothic", AppleGothic, sans-serif;
   font-size: 100%;
 }
 
@@ -166,9 +174,11 @@ article.sponsorship-package li.highlight {
   }
 }
 
+
 /**
  * Navigation menu
  */
+
 .navigation {
   background: #333;
   border-bottom: 0.1rem solid #937042;
@@ -188,14 +198,17 @@ article.sponsorship-package li.highlight {
   margin-bottom: 0;
   margin-right: 5rem;
 }
+
 .navigation .navigation-link {
   display: inline;
   padding-left: 15px;
 }
+
 .navigation a.button {
   display: inline-block;
   margin-left: 15px;
 }
+
 .navigation .text-right {
   display: inline-block;
   text-align: right;
@@ -221,14 +234,14 @@ article.sponsorship-package li.highlight {
   line-height: 5.6rem;
   position: relative;
 }
+
 .navigation .navigation-title img {
   padding-top: 8px;
   height: 45px;
 }
+
 @media only screen and (max-width: 600px) {
-  .navigation .navigation-link,
-  .navigation .navigation-title,
-  .navigation .title {
+  .navigation .navigation-link, .navigation .navigation-title, .navigation .title {
     font-size: 0.7em;
     padding-right: 4px;
   }
@@ -249,50 +262,63 @@ article.sponsorship-package li.highlight {
     padding: 0 2px;
   }
 }
+
+
 /**
  * Flexbox alignment
  */
+
 .flex {
   display: flex;
   flex: 1;
   justify-content: space-between;
 }
+
 .flex-left {
   align-items: flex-start;
 }
+
 .flex-right {
   display: flex;
   height: 55px;
   align-items: flex-end;
 }
 
+
 /**
  * Site footer
  */
+
 .footer {
   border-top: 1px solid #ddd;
   background-color: #fefefe;
   font-size: 86%;
   text-align: center;
 }
+
 .footer .organizers {
   margin-top: 4em;
 }
+
 .footer .past-years {
   margin-bottom: 4em;
 }
+
 .footer .past-years p {
   margin-bottom: 0;
 }
 
+
 /**
  * Schedule
  */
-.schedule {
-}
+
+.schedule {}
+
 .schedule h3 {
   border-bottom: 1px solid #333;
 }
+
 .schedule .timeslot {
   background: rgba(60, 15, 104, 0.7);
   /* rgba(155, 77, 202, 0.7) */
@@ -304,15 +330,18 @@ article.sponsorship-package li.highlight {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 .schedule .break-info {
   text-align: center;
 }
+
 .column .room {
   background-color: #ddd;
   font-size: 1.1em;
   padding: 10px 16px;
   margin-bottom: 1em;
 }
+
 .column .room.room-large {
   background-color: rgba(155, 77, 202, 0.35);
 }

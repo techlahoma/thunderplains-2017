@@ -311,3 +311,54 @@ article.sponsorship-package li.highlight {
 .column .room.room-large {
   background-color: rgba(155, 77, 202, 0.35);
 }
+
+/**
+ * Sponsors
+ */
+ul.sponsors {
+  margin: 0;
+  margin-bottom: 2em;
+  padding: 0;
+  list-style-type: none;
+}
+ul.sponsors li.sponsor {
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 7px 7px 0 rgba(0,0,0,.04);
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  max-width: 100%;
+}
+ul.sponsors li.gold span.label {
+  color: #756826;
+  background-color: #d8be3a;
+}
+ul.sponsors li.silver span.label {
+  background-color: silver;
+}
+ul.sponsors li.bronze span.label {
+  color: #dbcbb8;
+  background-color: #9b6825;
+}
+ul.sponsors li.sponsor a,
+ul.sponsors li.sponsor img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 220px;
+}
+ul.sponsors li.sponsor img {
+  padding: 0px;
+}
+ul.sponsors li.sponsor span.label {
+  display: block;
+  padding: 4px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}

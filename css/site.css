@@ -427,7 +427,7 @@ ul.sponsors li.sponsor span.label {
   bottom: 0;
   right: 0;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
   transition: height 0.25s ease-out;
 }

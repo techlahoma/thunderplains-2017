@@ -293,6 +293,7 @@ article.sponsorship-package li.highlight {
 }
 .schedule h3 {
   border-bottom: 1px solid #333;
+  padding-bottom: 4px;
 }
 .schedule .timeslot {
   background: rgba(60, 15, 104, 0.7);
@@ -386,4 +387,43 @@ ul.sponsors li.sponsor span.label {
 
 .column.talk p.description {
   visibility: hidden;
+}
+
+/* Talk */
+
+.talk-frame {
+  width: 100%;
+  height: 375px;
+  background-color: #9b4dca;
+  position: relative;
+  overflow: hidden;
+}
+
+.talk-frame:hover .talk-img {
+  opacity: 0.7;
+}
+
+.talk-frame:hover .talk-info {
+  height: 150px;
+}
+
+.talk-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.talk-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  transition: height 0.25s ease-out;
 }

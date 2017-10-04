@@ -408,7 +408,8 @@ ul.sponsors li.sponsor span.label {
 }
 
 .talk-frame:hover .talk-info {
-  height: 150px;
+  /* height: 150px; */
+  height: 375px;
 }
 
 .talk-img {
@@ -430,4 +431,8 @@ ul.sponsors li.sponsor span.label {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   transition: height 0.25s ease-out;
+}
+
+.talk-frame .talk-info > p {
+  font-size: 1em;
 }

@@ -94,13 +94,17 @@ h1.title {
     font-size: 1.7rem;
     padding: 0 6px;
   }
+
+  div .row > div .room {
+    display: none;
+  }
 }
 
 /**
  * Main website sections
  */
 section.main-section {
-  padding: 7em 4em;
+  padding: 4em 2em;
   border-bottom: 1px solid #ddd;
 }
 section.main-section h2 {

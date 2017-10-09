@@ -476,6 +476,13 @@ ul.sponsors li.sponsor span.label {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  z-index: 10;
 }
 
 .modal-dialog-overlay {
@@ -490,7 +497,7 @@ ul.sponsors li.sponsor span.label {
 .modal-dialog-content-frame {
   position: absolute;
   width: 100%;
-  top: 100px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -498,8 +505,6 @@ ul.sponsors li.sponsor span.label {
 
 .modal-dialog-content {
   background-color: #fff;
-  width: 1024px;
-  height: 800px;
   display: block;
   margin: 0 auto;
   overflow: auto;

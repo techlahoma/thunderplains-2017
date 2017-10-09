@@ -469,3 +469,38 @@ ul.sponsors li.sponsor span.label {
 .talk-frame .talk-info > p {
   font-size: 1em;
 }
+
+.modal-dialog {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.modal-dialog-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.modal-dialog-content-frame {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-dialog-content {
+  background-color: #fff;
+  width: 1024px;
+  height: 800px;
+  display: block;
+  margin: 0 auto;
+  overflow: auto;
+}

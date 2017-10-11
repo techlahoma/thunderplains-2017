@@ -17,6 +17,7 @@
   <link href="css/site.css" rel="stylesheet">
 </head>
 
+
 <body>
 
   <nav class="navigation">
@@ -29,7 +30,7 @@
         </div>
 
         <div class="flex-right">
-          <a class="navigation-link" href="sponsorship.html">Sponsorship</a>
+          <a class="navigation-link as-modal" href="sponsorship.html">Sponsorship</a>
           <a class="button" href="https://ti.to/techlahoma/thunderplains-2017">Tickets</a>
         </div>
       </div>
@@ -509,7 +510,7 @@
       <section class="main-section" id="sponsors">
         <h2><span>Sponsors</span></h2>
 
-        <ul class="sponsors">
+        <ul class="sponsors gold">
           <li class="sponsor gold">
             <span class="label">Gold</span>
             <a href="https://www.sonicdrivein.com/"><img alt="SONIC Drive-In" src="img/sponsors/sonic-small.png" /></a>
@@ -518,10 +519,14 @@
             <span class="label">Gold</span>
             <a href="https://www.mozilla.org/"><img alt="Mozilla" src="img/sponsors/mozilla.png" /></a>
           </li>
+        </ul>
+        <ul class="sponsors silver">
           <li class="sponsor silver">
             <span class="label">Silver</span>
             <a href="https://wegolook.com/"><img alt="WeGoLook" src="img/sponsors/wegolook.png" /></a>
           </li>
+        </ul>
+        <ul class="sponsors bronze">
           <li class="sponsor bronze">
             <span class="label">Bronze</span>
             <a href="http://www.noblesys.com/company.aspx"><img alt="NobleSystems" src="img/sponsors/noblesystems.png" /></a>
@@ -531,7 +536,6 @@
             <a href="https://www.npmjs.com/"><img alt="NPM" src="img/sponsors/npm.png" /></a>
           </li>
         </ul>
-
         <p>
           Interested in <a href="sponsorship.html">becoming a sponsor</a>? We'd love to have your support this year!
         </p>
@@ -544,8 +548,8 @@
 
         <p><strong>Visiting OKC?</strong>
           <br/>
-          <a href="visit.html">Check out our suggestions</a> for folks looking to explore OKC. We included coffee shops,
-          restaurants, and things to do.
+          <a href="visit.html" class="as-modal">Check out our suggestions</a> for folks looking to explore OKC. We included
+          coffee shops, restaurants, and things to do.
         </p>
 
         <p><strong>Hotels</strong>
@@ -629,7 +633,9 @@
   </footer>
 
   <!-- Include our bundled JS -->
-  <script src="/js/bundle.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="/js/tp.js"></script>
+
 </body>
 
 </html>

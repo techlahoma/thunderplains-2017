@@ -482,7 +482,7 @@ ul.sponsors li.sponsor span.label {
   -ms-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  z-index: 10;
+  z-index: 11;
 }
 
 .modal-dialog-overlay {

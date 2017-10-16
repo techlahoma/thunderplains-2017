@@ -12,7 +12,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family: Limelight, "Century Gothic", AppleGothic, sans-serif;
+  font-family: Limelight, 'Century Gothic', AppleGothic, sans-serif;
   font-weight: bold;
 }
 
@@ -111,7 +111,7 @@ section.main-section h2 {
   display: inline-block;
   margin: 0 auto;
   margin-bottom: 1.5em;
-  font-family: "Poiret One", "Century Gothic", AppleGothic, sans-serif;
+  font-family: 'Poiret One', 'Century Gothic', AppleGothic, sans-serif;
   text-align: center;
   border-bottom: 1px solid #333;
 }
@@ -119,7 +119,7 @@ section.main-section p {
   font-size: 1.4em;
 }
 section.main-section a.button {
-  font-family: "Poiret One", Limelight, "Century Gothic", AppleGothic,
+  font-family: 'Poiret One', Limelight, 'Century Gothic', AppleGothic,
     sans-serif;
   font-weight: bold;
   height: 4.8rem;
@@ -158,7 +158,7 @@ article.sponsorship-package li.highlight {
  * Buttons
  */
 .button {
-  font-family: "Poiret One", Limelight, "Century Gothic", AppleGothic,
+  font-family: 'Poiret One', Limelight, 'Century Gothic', AppleGothic,
     sans-serif;
   font-size: 100%;
 }
@@ -218,7 +218,7 @@ article.sponsorship-package li.highlight {
 .navigation .navigation-title,
 .navigation .title {
   color: #bf9865;
-  font-family: Limelight, "Century Gothic", AppleGothic, sans-serif;
+  font-family: Limelight, 'Century Gothic', AppleGothic, sans-serif;
   font-size: 2.6rem;
   letter-spacing: 2px;
   line-height: 5.6rem;
@@ -331,6 +331,9 @@ ul.sponsors {
   margin-bottom: 2em;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 ul.sponsors li.sponsor {
   margin: 0;
@@ -340,20 +343,38 @@ ul.sponsors li.sponsor {
   background-color: #fff;
   box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.04);
   display: inline-block;
-  width: 300px;
-  height: 250px;
+
   max-width: 100%;
 }
+
+ul.sponsors li.sponsor.gold {
+  width: 350px;
+  height: 300px;
+}
+
+ul.sponsors li.sponsor.silver {
+  width: 300px;
+  height: 250px;
+}
+
+ul.sponsors li.sponsor.bronze {
+  width: 250px;
+  height: 200px;
+}
+
 ul.sponsors li.gold span.label {
   color: #756826;
   background-color: #d8be3a;
+  font-size: 24px;
 }
 ul.sponsors li.silver span.label {
   background-color: silver;
+  font-size: 18px;
 }
 ul.sponsors li.bronze span.label {
   color: #dbcbb8;
   background-color: #9b6825;
+  font-size: 12px;
 }
 ul.sponsors li.sponsor a,
 ul.sponsors li.sponsor img {
@@ -361,15 +382,28 @@ ul.sponsors li.sponsor img {
   padding: 0;
   margin: 0;
   border: 0;
-  line-height: 220px;
 }
+
+ul.sponsors li.sponsor.gold a,
+ul.sponsors li.sponsor.gold img {
+  line-height: 250px;
+}
+ul.sponsors li.sponsor.silver a,
+ul.sponsors li.sponsor.silver img {
+  line-height: 200px;
+}
+ul.sponsors li.sponsor.bronze a,
+ul.sponsors li.sponsor.bronze img {
+  line-height: 150px;
+}
+
 ul.sponsors li.sponsor img {
   padding: 0px;
 }
 ul.sponsors li.sponsor span.label {
   display: block;
   padding: 4px;
-  font-size: 12px;
+
   text-align: center;
   text-transform: uppercase;
 }
@@ -434,4 +468,44 @@ ul.sponsors li.sponsor span.label {
 
 .talk-frame .talk-info > p {
   font-size: 1em;
+}
+
+.modal-dialog {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  z-index: 11;
+}
+
+.modal-dialog-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.modal-dialog-content-frame {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-dialog-content {
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  overflow: auto;
 }

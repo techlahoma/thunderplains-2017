@@ -78,6 +78,13 @@ h1.title {
   text-align: center;
 }
 
+.hero .button {
+  border: 1px solid #fff;
+  font-size: 1.6em;
+  line-height: 2em;
+  height: auto;
+}
+
 @media only screen and (max-width: 900px) {
   .hero .intro h1,
   .hero .intro h2 {
